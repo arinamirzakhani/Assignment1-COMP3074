@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Inputs -->
+
         <EditText
             android:id="@+id/etHours"
             android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:inputType="numberDecimal"
             android:hint="Hourly rate ($)" />
 
-        <!-- Action -->
+
         <Button
             android:id="@+id/btnCalculate"
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:text="Calculate"
             android:layout_marginTop="12dp" />
 
-        <!-- Results -->
+
         <TextView
             android:id="@+id/tvPay"
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:text="Overtime pay: $0.00" />
 
-        <!-- NEW: gross (before tax) -->
+
         <TextView
             android:id="@+id/tvGross"
             android:layout_width="match_parent"
