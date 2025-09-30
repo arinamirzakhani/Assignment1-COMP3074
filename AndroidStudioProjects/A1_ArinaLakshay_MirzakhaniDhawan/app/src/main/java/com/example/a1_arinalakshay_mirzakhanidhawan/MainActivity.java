@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         tvPay = findViewById(R.id.tvPay);
         tvOvertime = findViewById(R.id.tvOvertime);
-        tvGross = findViewById(R.id.tvGross);   // NEW
+        tvGross = findViewById(R.id.tvGross);
         tvTax = findViewById(R.id.tvTax);
         tvTotal = findViewById(R.id.tvTotal);
 
@@ -94,14 +94,14 @@ public class MainActivity extends AppCompatActivity {
         double regularPay = regularHours * rate;
         double overtimePay = overtimeHours * rate * 1.5;
 
-        double grossPay = regularPay + overtimePay;  // NEW label “gross”
-        double tax = grossPay * 0.18;                // 18%
-        double total = grossPay - tax;               // net
+        double grossPay = regularPay + overtimePay;
+        double tax = grossPay * 0.18;
+        double total = grossPay - tax;
 
         // Show results
         tvPay.setText("Pay (regular): " + currency.format(regularPay));
         tvOvertime.setText("Overtime pay: " + currency.format(overtimePay));
-        tvGross.setText("Total (gross): " + currency.format(grossPay));  // NEW
+        tvGross.setText("Total (gross): " + currency.format(grossPay));
         tvTax.setText("Tax (18%): " + currency.format(tax));
         tvTotal.setText("Total (after tax): " + currency.format(total));
 
